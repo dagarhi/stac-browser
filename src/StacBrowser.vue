@@ -12,10 +12,10 @@
           <nav class="actions navigation">
             <b-button-group v-if="canSearch || !isServerSelector">
               <b-button v-if="!isServerSelector" variant="primary" :title="$t('browse')" @click="sidebar = !sidebar">
-                <b-icon-list /><span class="button-label">{{ $t('browse') }}</span>
+                <mdi-menu /><span class="button-label">{{ $t('browse') }}</span>
               </b-button>
               <b-button v-if="canSearch" variant="primary" :to="searchBrowserLink" :title="$t('search.title')" :pressed="isSearchPage">
-                <b-icon-search /><span class="button-label">{{ $t('search.title') }}</span>
+                <mdi-magnify /><span class="button-label">{{ $t('search.title') }}</span>
               </b-button>
               <b-button v-if="root" variant="primary" id="popover-root-btn" tabindex="0">
                 <b-icon-database /><span class="button-label">{{ serviceType }}</span>
