@@ -109,8 +109,8 @@ import { useColorMode } from 'bootstrap-vue-next';
 import CONFIG from './merged-config';
 
 // Import icons needed for dynamic component usage
-import BIconLock from '~icons/bi/lock';
-import BIconUnlock from '~icons/bi/unlock';
+import MdiLock from '~icons/mdi/lock-outline';
+import MdiUnlock from '~icons/mdi/lock-open-variant-outline';
 
 import ErrorAlert from './components/ErrorAlert.vue';
 import HeaderTitle from './components/HeaderTitle.vue';
@@ -149,8 +149,8 @@ export default defineComponent({
   name: 'StacBrowser',
   components: {
     Authentication,
-    BIconLock,
-    BIconUnlock,
+    MdiLock,
+    MdiUnlock,
     BPopover: defineAsyncComponent(() => import('bootstrap-vue-next').then(m => m.BPopover)),
     ErrorAlert,
     HeaderTitle,
@@ -203,7 +203,7 @@ export default defineComponent({
       return this.$route.name === 'select';
     },
     authIcon() {
-      return this.isLoggedIn ? BIconUnlock : BIconLock;
+      return this.isLoggedIn ? MdiUnlock : MdiLock;
     },
     authTitle() {
       return this.authMethod.getButtonTitle();
