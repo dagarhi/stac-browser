@@ -7,9 +7,9 @@
 
 <script>
 import { useClipboard } from '@vueuse/core';
-import BIconClipboard from '~icons/bi/clipboard';
-import BIconClipboardCheck from '~icons/bi/clipboard-check';
-import BIconClipboardX from '~icons/bi/clipboard-x';
+import BIconClipboard from '~icons/mdi/clipboard-outline';
+import BIconClipboardCheck from '~icons/mdi/clipboard-check-outline';
+import BIconClipboardX from '~icons/mdi/clipboard-remove-outline';
 
 export default {
   name: "CopyButton",

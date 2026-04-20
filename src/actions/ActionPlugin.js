@@ -1,6 +1,6 @@
 import urijs from 'urijs';
 import i18n from "../i18n";
-import BIconBoxArrowUpRight from '~icons/bi/box-arrow-up-right';
+import BIconBoxArrowUpRight from '~icons/mdi/open-in-new';
 
 export default class ActionPlugin {
 
