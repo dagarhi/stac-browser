@@ -119,10 +119,21 @@
       "remark-preset-lint-recommended",
       [
         "remark-lint-no-undefined-references",
-        { "allow": ["!WARNING","!NOTE","!IMPORTANT","!CAUTION","!TIP"] }
+        {
+          "allow": [
+            "!WARNING",
+            "!NOTE",
+            "!IMPORTANT",
+            "!CAUTION",
+            "!TIP"
+          ]
+        }
       ],
       "remark-lint-no-literal-urls",
-      ["remark-lint-no-shortcut-reference-link", false]
+      [
+        "remark-lint-no-shortcut-reference-link",
+        false
+      ]
     ]
   },
   "msw": {
