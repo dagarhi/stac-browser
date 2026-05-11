@@ -59,7 +59,7 @@
                 <mdi-folder-upload-outline /><span class="button-label">{{ $t('goToCollection.label') }}</span>
               </b-button>
               <b-button v-if="parentLink" :to="toBrowserPath(parentLink.href)" :title="parentLinkTitle" variant="outline-primary" size="sm">
-                <mdi-arrow-top-right style="transform: rotate(-90deg);" /><span class="button-label">{{ $t('goToParent.label') }}</span>
+                <IconArrow90degUp /><span class="button-label">{{ $t('goToParent.label') }}</span>
               </b-button>
             </b-button-group>
           </nav>
@@ -104,6 +104,7 @@ import CONFIG from './config';
 // Import icons needed for dynamic component usage
 import MdiLock from '~icons/mdi/lock-outline';
 import MdiUnlock from '~icons/mdi/lock-open-variant-outline';
+import IconArrow90degUp from '~icons/custom/arrow-90deg-up';
 
 import ErrorAlert from './components/ErrorAlert.vue';
 import StacLink from './components/StacLink.vue';
@@ -142,6 +143,7 @@ export default defineComponent({
   name: 'StacBrowser',
   components: {
     Authentication,
+    IconArrow90degUp,
     MdiLock,
     MdiUnlock,
     BPopover: defineAsyncComponent(() => import('bootstrap-vue-next').then(m => m.BPopover)),

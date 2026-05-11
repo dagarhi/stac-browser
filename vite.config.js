@@ -159,7 +159,7 @@ export default defineConfig(async ({ mode }) => {
             alias: {
               "mdi-icon": "mdi",
             },
-            customCollections: ["share"],
+            customCollections: ["share", "custom"],
           }),
         ],
       }),
@@ -167,6 +167,7 @@ export default defineConfig(async ({ mode }) => {
         compiler: "vue3",
         customCollections: {
           share: FileSystemIconLoader("./src/media/"),
+          custom: FileSystemIconLoader("./src/media/custom/"),
         },
       }),
       nodePolyfills({
