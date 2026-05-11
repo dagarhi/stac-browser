@@ -5,13 +5,13 @@
         v-if="stacUrl" size="sm" variant="outline-primary" id="popover-link-btn"
         :title="$t('source.detailsAboutSource')" tag="a" tabindex="0"
       >
-        <b-icon-info-lg /><span class="button-label">{{ $t('source.label') }}</span>
+        <mdi-folder-outline /><span class="button-label">{{ $t('source.label') }}</span>
       </b-button>
       <b-button
         size="sm" variant="outline-primary" id="popover-share-btn"
         :title="$t('source.share.withOthers')" tag="a" tabindex="0"
       >
-        <b-icon-share /><span class="button-label">{{ $t('source.share.title') }}</span>
+        <mdi-share-variant-outline /><span class="button-label">{{ $t('source.share.title') }}</span>
       </b-button>
 
       <b-popover

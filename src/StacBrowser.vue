@@ -28,7 +28,7 @@
               v-if="root" size="sm" variant="outline-primary" id="popover-root-btn"
               :title="serviceType" tag="a" tabindex="0"
             >
-              <b-icon-caret-down-fill />
+              <mdi-menu-down />
             </b-button>
           </div>
           <nav class="actions user">
@@ -53,13 +53,13 @@
           <nav class="actions navigation">
             <b-button-group>
               <b-button v-if="back" :to="selfBrowserLink" :title="$t('goBack.description', {type})" variant="outline-primary" size="sm">
-                <b-icon-arrow-left /><span class="button-label">{{ $t('goBack.label') }}</span>
+                <mdi-arrow-left /><span class="button-label">{{ $t('goBack.label') }}</span>
               </b-button>
               <b-button v-if="collectionLink" :to="toBrowserPath(collectionLink.href)" :title="collectionLinkTitle" variant="outline-primary" size="sm">
-                <b-icon-folder-symlink /><span class="button-label">{{ $t('goToCollection.label') }}</span>
+                <mdi-folder-upload-outline /><span class="button-label">{{ $t('goToCollection.label') }}</span>
               </b-button>
               <b-button v-if="parentLink" :to="toBrowserPath(parentLink.href)" :title="parentLinkTitle" variant="outline-primary" size="sm">
-                <b-icon-arrow-90deg-up /><span class="button-label">{{ $t('goToParent.label') }}</span>
+                <mdi-arrow-top-right style="transform: rotate(-90deg);" /><span class="button-label">{{ $t('goToParent.label') }}</span>
               </b-button>
             </b-button-group>
           </nav>
