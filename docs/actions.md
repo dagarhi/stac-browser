@@ -107,7 +107,7 @@ The interfaces for both look as follows:
 - `get text() : string`
   - Returns the text that is displayed for the button, defaults to "Open". Should be using the [i18n methods](https://kazupon.github.io/vue-i18n/api/#methods) to localize the text.
 - `get icon() : Vue`
-  - Returns a Vue component that should be the icon for the button. Defaults to `BIconBoxArrowUpRight`, see <https://bootstrap-vue.org/docs/icons#icons-1> and search for `arrow-up-right`.
+  - Returns a Vue component that should be the icon for the button. Defaults to `MdiOpenInNew`, see <https://pictogrammers.com/library/mdi/> and search for `open-in-new`.
 
 Each action should at least implement custom behaviour for `uri`, `show` and `text`.
 

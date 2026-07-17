@@ -18,7 +18,7 @@
                 <mdi-magnify /><span class="button-label">{{ $t('search.title') }}</span>
               </b-button>
               <b-button v-if="root" variant="primary" id="popover-root-btn" tabindex="0">
-                <b-icon-database /><span class="button-label">{{ serviceType }}</span>
+                <mdi-database-outline /><span class="button-label">{{ serviceType }}</span>
               </b-button>
             </b-button-group>
           </nav>
@@ -43,8 +43,8 @@
                 variant="primary"
                 @click="toggleColorMode"
               >
-                <b-icon-sun v-if="colorMode === 'light'" :title="$t('switchToDarkMode')" />
-                <b-icon-moon-stars v-else :title="$t('switchToLightMode')" />
+                <mdi-weather-sunny v-if="colorMode === 'light'" :title="$t('switchToDarkMode')" />
+                <mdi-weather-night v-else :title="$t('switchToLightMode')" />
               </b-button>
             </b-button-group>
           </nav>
@@ -59,13 +59,13 @@
           <nav class="actions navigation">
             <b-button-group>
               <b-button v-if="back" :to="selfBrowserLink" :title="$t('goBack.description', {type})" variant="outline-primary" size="sm">
-                <b-icon-arrow-left /><span class="button-label">{{ $t('goBack.label') }}</span>
+                <mdi-arrow-left /><span class="button-label">{{ $t('goBack.label') }}</span>
               </b-button>
               <b-button v-if="collectionLink" :to="toBrowserPath(collectionLink)" :title="collectionLinkTitle" variant="outline-primary" size="sm">
-                <b-icon-folder-symlink /><span class="button-label">{{ $t('goToCollection.label') }}</span>
+                <mdi-folder-upload-outline /><span class="button-label">{{ $t('goToCollection.label') }}</span>
               </b-button>
               <b-button v-if="parentLink" :to="toBrowserPath(parentLink)" :title="parentLinkTitle" variant="outline-primary" size="sm">
-                <b-icon-arrow-90deg-up /><span class="button-label">{{ $t('goToParent.label') }}</span>
+                <mdi-arrow-up-left /><span class="button-label">{{ $t('goToParent.label') }}</span>
               </b-button>
             </b-button-group>
           </nav>

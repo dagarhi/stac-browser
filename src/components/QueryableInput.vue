@@ -27,7 +27,7 @@
           :active="negate"
           @click="updateNegate(!negate)"
         >
-          <b-icon-check :class="{hide: !negate}" class="mt-1 me-2" />
+          <mdi-check :class="{hide: !negate}" class="mt-1 me-2" />
           <span class="long-label">{{ cqlNot.longLabel }}</span>
           <b-badge variant="dark" class="ms-2">{{ cqlNot.label }}</b-badge>
         </b-dropdown-item-button>
@@ -111,7 +111,7 @@
       </b-form-checkbox>
 
       <b-button class="delete" size="sm" variant="danger" @click="$emit('remove-queryable')">
-        <b-icon-x-circle-fill aria-hidden="true" />
+        <mdi-close-circle aria-hidden="true" />
       </b-button>
     </div>
 
